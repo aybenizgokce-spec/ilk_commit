@@ -46,7 +46,7 @@ test edin.
         response.then().assertThat().statusCode(201).contentType("application/json")
                 .body("title", equalTo("API"))
                 .body("body",containsString("API"))
-                .body("userTo",lessThan(100));
+                .body("userId",lessThan(100));
 
     }
 }
